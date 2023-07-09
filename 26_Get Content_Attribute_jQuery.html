@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Get Content Value </title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("button").click(function () {
+				alert($("#ftx").attr("href"));
+			});
+		});
+	</script>
+</head>
+<body>
+	<p> <a href="https://www.ftx.com" id="ftx"> FTX.com</a></p>
+	<button style="width:150px; background: aqua; margin: 15px 0px 0px 150px;"> Show Value </button>
+</body>
+</html>

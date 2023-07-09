@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Using Callback function in jQuery </title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("#squarebox").hide(1000, function () {//here function() performs call back and we get desired result
+					alert("The Square is now hidden");
+				});
+			});
+			
+		});
+	</script>
+	<style type="text/css">
+		#squarebox {
+				width: 175px;
+				height: 175px;
+				background: gold;
+				margin-top: 25px;
+				position: absolute;box
+		}
+	</style>
+</head>
+<body>
+	<button style="width:150px; background: lime; margin: 15px 0px 0px 150px;"> Animate </button>
+	<div id="squarebox"> </div>
+</body>
+</html>

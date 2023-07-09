@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Hiding Heading of the text inside <p></p> with button click using jQuery </title>
+
+	<script src="jquery.min.js"></script> <!-- it's important that we have jQqery.min.js file in the folder -->
+	<script type="text/javascript">
+
+		$(document).ready(function () {       // We are using Nesting Query method
+			$("button").click(function () {  // Syntax  $(documnt).ready(function () {.. jQuery methods.. }); 
+				$("#head").hide();  // In earlier example we had hidden text, now we hide heading
+			//	$("*").hide();// If we put $("*").hide(); instead of $("#head") all elements will get hide 
+			});  // If we use class in h1 tag, then replace it with $(".head") where head is class of h1
+		}); //	$(this).hide();// If we put $(this).hide(); instead of $("#head") button will get hide 
+		    // $(":button").hide(); // It will also hide the button
+	</script>
+</head>
+<body>
+	<h1 id="head"> Welcome to Amshekh labs pvt ltd </h1><!-- h1 given a id named head, so we can use it to hide -->
+<!-- <h1 class="head"> Welcome to Amshekh labs pvt ltd </h1>  example where we use class instead of id -->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<button style="width: 150px; background: aqua;"> Hide </button>
+</body>
+</html>

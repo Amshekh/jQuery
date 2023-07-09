@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Filter Remove </title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("p").remove(".rem1, .rem2"); // All paragraphs with classes rem1 and rem2 will be removed
+			});
+		});
+	</script>
+	<style type="text/css">
+		.rem1 {
+				color: gold;
+				font-size: 15px;
+		}
+		.rem2 {
+				color: lime;
+				font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<p> This is a paragraph 1</p>
+	<p class="rem1"> This paragraph has class rem1</p>
+	<p class="rem1"> This paragraph has class rem1</p>
+	<p class="rem2"> This paragraph has class rem2</p>
+	<button style="width:150px; background: aqua; margin: 15px 0px 0px 150px;"> Remove </button>
+</body>
+</html>

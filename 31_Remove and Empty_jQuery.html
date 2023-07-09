@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Remove and Empty </title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("#box").remove(); // This will remove box along with text content
+		//	    $("#box").empty(); // This will remove only text content, and box will be empty
+			});
+		});
+	</script>
+	<style type="text/css">
+		#box {
+				width: 300px;
+				height: 250px;
+				background: yellow;
+				border: 1px solid black;
+				padding: 20px;
+				margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"> Some random text </div>
+	<button style="width:150px; background: aqua; margin: 15px 0px 0px 150px;"> Remove </button>
+</body>
+</html>

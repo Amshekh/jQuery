@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Get Content Text | HTML | Value </title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#b1").click(function () {
+				$("#p1").text("New Text Line"); // .text is used
+			});
+			$("#b2").click(function () {
+				$("#p2").html("<b>Bold Text Line</b>"); // .html is used
+			});
+			$("#b3").click(function () {
+				$("#name").val("Amshekh labs pvt ltd");  // .val is used
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="p1"> This is Text line 1 </p>
+	<p id="p2"> This is Text line 2 </p>
+
+	<p> Name: <input type="text" id="name" value="Amit Shekhar"/></p>
+	<button id="b1" style="width:150px; background: aqua; margin: 15px 0px 0px 150px;"> Reset Text </button>
+	<button id="b2" style="width:150px; background: gold; margin: 15px 0px 0px 150px;"> Reset HTML </button>
+	<button id="b3" style="width:150px; background: lime; margin: 15px 0px 0px 150px;"> Reset Value </button>
+</body>
+</html>

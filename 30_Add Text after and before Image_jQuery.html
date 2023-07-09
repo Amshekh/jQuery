@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Add Text after and before Image </title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#b1").click(function () {
+				$("img").before("<b> Image Added Before Text</b>");
+			});
+			$("#b2").click(function () {
+				$("img").after("<i> Image is Added After Text</i>");
+			});
+		});
+	</script>
+</head>
+<body>
+	<img src="Book_fon_by_AS.jpg" width="250px" height="250px"/></br></br>
+	<button id="b1" style="width:150px; background: aqua; margin: 15px 0px 0px 150px;"> Insert Before </button>
+	<button id="b2" style="width:150px; background: gold; margin: 15px 0px 0px 150px;"> Insert After </button>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Animation Queue functionality in jQuery </title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("button").click(function () {	  //width and height arguments are scaled up, you change as per need
+				let square = $("#squarebox");
+				square.animate({height: '500px', opacity: 0.50}, 1000);
+				square.animate({width: '500px', opacity: 0.90}, 500);
+				square.animate({height: '200px', opacity: 0.50}, 1000);
+				square.animate({width: '200px', opacity: 0.90}, 500);
+			});
+		});
+	</script>
+	<style type="text/css">
+		#squarebox {
+			width: 175px;
+			height: 175px;
+			background: gold;
+			margin-top: 15px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<button style="width: 150px; background: aqua; margin: 15px 0px 0px 350px;"> Start </button>
+	<div id="squarebox"></div>
+</body>
+</html>

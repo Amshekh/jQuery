@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Slide Up in jQuery </title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#topbar").click(function () {
+				$("#panel").slideToggle(1000);  // slideUp and slideDown functionality using Toggle functionality
+			});
+		});
+	</script>
+	<style type="text/css">
+		#panel,	#topbar {
+			padding: 5px;
+			text-align: center;
+			background: deepskyblue;
+			border: 2px grey solid;
+		}
+
+		#panel{
+			padding: 80px;/* We don't want to give display because only then we will be able to slideUp content */ 
+		}
+	</style>
+</head>
+<body>
+	<div id="topbar"> View Panel </div>
+
+	<div id="panel"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+</body>
+</html>
